@@ -1,13 +1,12 @@
-function compareStrictValues(m, n) {
-    if (m != n) return "Not Equal";
-    return "Equal";
-  }
-  
-  console.log(compareStrictValue(8, "8"));
-  console.log(compareStrictValue("8", 8));
-  console.log(compareStrictValue("8", 8));
-  console.log(compareStrictValue("8", "8"));
-  console.log(compareStrictValue(8, 8));
-  
-  module.exports = compareStrictValue;
-  
+function compareStrictValues(m) {
+  if (m != 55) return "Not Equal";
+  return "Equal";
+}
+
+console.log(compareStrictValues(55));
+console.log(compareStrictValues("55"));
+console.log(compareStrictValues(21));
+console.log(compareStrictValues(12));
+console.log(compareStrictValues("Doe"));
+
+module.exports = compareStrictValues;
