@@ -1,0 +1,15 @@
+function inverseWhile() {
+  var fiveNumbers = "";
+  var i = 5;
+  while (i >= 0) {
+    fiveNumbers += i;
+    if (i == 0) break;
+    fiveNumbers += ",";
+    i--;
+  }
+  return fiveNumbers;
+}
+
+console.log(inverseWhile());
+
+module.exports = inverseWhile;
