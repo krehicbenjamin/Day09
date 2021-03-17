@@ -22,9 +22,32 @@
   </ol>
   <form action="/submit-cat-photo">
     <input type="text" placeholder="cat photo URL" required/>
-    <input type="radio" name="gender" value="male">
-    <radio></radio>
-    <button type="submit">Submit</button>
+    <div>
+        <label for="inside">
+            <input id="inside" type="radio" name="inside-outside" value="Inside" checked>Inside
+        </label>
+        <label for="outside">
+            <input id="outside" type="radio" name="inside-outside" value="Outside">Outside
+        </label>
+    </div>
+     <div>
+        <label>
+            <input id="dog" type="checkbox" name="favorite-pet" value="Dog" checked>Dog
+        </label>
+        <label>
+            <input id="cat" type="checkbox" name="favorite-pet" value="Cat">Cat
+        </label>
+        <label>
+            <input id="hamster" type="checkbox" name="favorite-pet" value="Hamster">Hamster
+        </label>
+        <label>
+            <input id="bird" type="checkbox" name="favorite-pet" value="Bird">Bird
+        </label>
+        <label>
+            <input id="fish" type="checkbox" name="favorite-pet" value="Fish">Fish
+        </label>
+    </div>
+     <button type="submit">Submit</button>
   </form>
 </main>
 <!--A popup message comes with the text "fill out this field"-->
